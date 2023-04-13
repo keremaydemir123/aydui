@@ -13,15 +13,19 @@ npm install --save aydui
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'aydui'
+import { Button } from 'aydui'
 import 'aydui/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+function App (){
+  return (
+    <>
+     <Button theme="primary">Button</Button>
+     <Button theme="secondary">Button with onClick event</Button>
+     <Button theme="accent" className="customBtn">Button with custom className</Button>
+    </>
+  ) 
 }
 ```
 
